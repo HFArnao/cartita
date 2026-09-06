@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4b8ca">
+  <meta name="description" content="Una carta para celebrar nuestro primer año juntos.">
+  <title>Un año contigo ♡</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="contenido.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <canvas id="petals" aria-hidden="true"></canvas>
+  <section class="welcome" id="welcome" aria-labelledby="cover-title">
+    <div class="flowers flowers-top" aria-hidden="true">🌸🌹🌸</div>
+    <div class="flowers flowers-bottom" aria-hidden="true">🌸🌹🌸</div>
+    <p class="eyebrow">PARA MI PERSONA FAVORITA</p>
+    <h1 id="cover-title">Un año <em>contigo.</em></h1>
+    <p class="intro">Y todavía me haces sentir mariposas.</p>
+    <div class="envelope-arrival">
+      <button class="envelope" id="open-letter" aria-label="Abrir mi carta de aniversario" aria-controls="story" aria-expanded="false">
+        <span class="envelope-note">Tengo algo que decirte…</span>
+        <span class="envelope-front"></span>
+        <span class="envelope-flap"></span>
+        <span class="seal" aria-hidden="true">♡</span>
+        <span class="envelope-to">Para ti, con todo mi amor</span>
+      </button>
+    </div>
+    <p class="tap-hint">Toca el corazón para abrir <span aria-hidden="true">↑</span></p>
+    <p class="cover-foot">365 días · miles de recuerdos · tú y yo</p>
+  </section>
+  <main id="story" hidden>
+    <section class="letter-section">
+      <p class="eyebrow reveal">ESTO ES SOLO EL COMIENZO</p>
+      <article class="letter reveal" aria-labelledby="letter-title">
+        <span class="letter-flower" aria-hidden="true">🌸</span>
+        <p class="letter-date">Nuestro primer aniversario</p>
+        <h2 id="letter-title" tabindex="-1"></h2>
+        <div id="letter-body"></div>
+        <p class="signature" id="signature"></p>
+        <span class="letter-heart" aria-hidden="true">♡</span>
+      </article>
+      <p class="scroll-note reveal">Un poquito de nuestra historia <span aria-hidden="true">↓</span></p>
+    </section>
+    <section class="memories section-space" aria-labelledby="memories-title">
+      <div class="section-heading reveal"><p class="eyebrow">MIS MOMENTOS FAVORITOS</p><h2 id="memories-title">Si es contigo,<br><em>lo guardo para siempre.</em></h2></div>
+      <div class="photo-grid" id="memories-gallery"></div>
+    </section>
+    <section class="beach section-space" aria-labelledby="beach-title">
+      <div class="palm palm-left" aria-hidden="true">🌴</div><div class="palm palm-right" aria-hidden="true">🌴</div>
+      <div class="section-heading reveal"><p class="eyebrow">SAL EN LA PIEL, AMOR EN EL ALMA</p><h2 id="beach-title">Tú, yo <em>y el mar.</em></h2><p id="beach-text"></p></div>
+      <div class="photo-grid beach-grid" id="beach-gallery"></div>
+      <div class="beach-life" aria-hidden="true"><span>🥥</span><span class="crab">🦀</span><span>🐚</span></div>
+    </section>
+    <footer class="ending section-space"><span class="beating-heart" aria-hidden="true">♡</span><p class="eyebrow reveal">POR TODO LO QUE NOS QUEDA</p><h2 class="reveal">Te amo<br><em>mi Cachetona.</em></h2><p class="reveal">Mi lugar favorito siempre será contigo.</p><button class="replay" id="replay">Volver a abrir mi carta ↺</button></footer>
+  </main>
+  <noscript><p class="noscript">Activa JavaScript en tu navegador para abrir esta carta.</p></noscript>
+</body>
+</html>
